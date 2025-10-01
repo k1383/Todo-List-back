@@ -66,3 +66,6 @@ DELETE  /todo/:id   -- Supprimer un élément de liste
 - isCompleted : Est-ce que l'élément de liste est complété ? (Boolean, require)
 - creationDate : Quand l'élément de liste à été créer (Date, require)
 - completeDate : Quand l'élément à été marqué comme validé (Data)
+
+
+- Repo Front-end https://github.com/k1383/Todo-List-Front
