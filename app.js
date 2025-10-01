@@ -24,3 +24,5 @@ app.listen(port, () => { console.log( `Serveur démarré sur http://localhost:${
 
 // partage de resourece entre différent éléments "cors"
 // npm install cors
+
+// CORS (Partage de ressource cross-origin ressource sharing) est un mécanisme qui consiste à transmettre des entêtes HTTP qui déterminent s'il faut ou non bloquer les requêtes à des ressources restreintes sur une page web qui se trouve sur un domaine externe au domaine dont la ressource est originaire.
