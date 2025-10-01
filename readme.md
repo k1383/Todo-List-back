@@ -5,7 +5,9 @@
 - [Description](#Description)
 - [Objectif](#Objectif)
 - [Installation](#Installation)
+- [MongoDB](#MongoDB)
 - [Aperçu](#Aperçu)
+- [Déploiement](#Déploiement)
 
 ### Description
 - **Todo List** est une application web permettant à un utilisateur de pouvoir créer une todo list 
@@ -35,37 +37,50 @@ cd Todo-List-back
 - Lancer le serveur `nodemon app.js`
 L'application est disponible sur http://localhost:5173.
 
-### Fonctionnalités principales
+4. Créer un fichier `.env` et ajouter `MONGO_URI=`
 
-### Aperçu
-Aperçu d'une todo list d'un utilisateur 
-Nous pouvons ajouter une nouvelle tâche grâce formulaire, cocher une tâche si celci est terminer ou bien la décocher et ainsi on peux supprimer une tâche en cliquant sur la croix rouge  
-![alt text](image.png)
+5. Créer un fichier `.gignore` et ajouter ceci
+```bash
+    .env
+    node_modules
+```
 
-# Gestionnaire de Tâches (To-Do List)
-*   **Concept :** L'application web la plus classique pour débuter.
-*   **Données :** Tâche (id, texte, estComplétée).
-*   **Opérations CRUD :**
-    * `CREATE` : Ajouter une nouvelle tâche.
-    * `READ` : Afficher toutes les tâches.
-    * `UPDATE` : Marquer une tâche comme "complétée".
-    * `DELETE` : Supprimer une tâche.
+### MongoDB
 
-## Les endpoints 
+- Accèder au site de [MongoDB](https://www.mongodb.com/)
+-  Inscrivez-vous 
+- Une fois sur la page d'accueil cliquez sur "New Project"
+- Nommez votre projet et fait ensuite cliquer sur "next".
+    - Si vous n'avez pas de membres à définir pour des autorisation cliquez sur "Create Project"
+- Vous arrivez alors ici, cliquer sur "+ Create" 
+![alt text](image-1.png) 
+- Une fois ici choisissez la versions gratuite et cliquez sur "Create Deployement"  
+![alt text](image-2.png)
+- Choisissez un nom d'utilisateur et un mot de passe :warning: **Stocker ces informations dans un endroit sécuriser**
+    - Cliquer sur "Create Data User" et ensuite cliquer sur "choose a connection method" 
+![alt text](image-5.png)
+- Connect to your application → Drivers 
+![alt text](image-6.png)
+- Vous arrivez sur "Connecting with MongoDB Driver"
+    - Répcupérer le lien et faite un copier coller dans le fichier .env sur` MONGO_URI`
+    - `MONGO_URI=lien`
 
-GET     /todo       -- Pour récupérer tous les éléments de liste
-GET     /todo/:id   -- Récupérer un élément de liste en particulier
-POST    /todo       -- Créer un élément de list
-PATCH   /todo/:id   -- Modifier un élément de liste pour le passer à !isCompleted  
-DELETE  /todo/:id   -- Supprimer un élément de liste 
+### Déploiement
 
-## Schema de données 
+Déploiement du Back-end sur Render  
 
-- Id : Identifiant unique de l'élément de liste (string)
-- Title : Contenu textuel de l'élément de liste (string, require)
-- isCompleted : Est-ce que l'élément de liste est complété ? (Boolean, require)
-- creationDate : Quand l'élément de liste à été créer (Date, require)
-- completeDate : Quand l'élément à été marqué comme validé (Data)
+[Documentation / aide](https://render.com/docs/web-services)
+
+1. Cliquez sur le bouton **New** + du tableau de bord et sélectionner **Web Service**
+2. Connectez votre dépôt GitHub ou GitLab ou entrez l’URL publique d’un dépôt public
+3. Donnez un nom à votre site web
+4. Language : Node
+5. Branch : Main
+6. Region : Frankfurt (la plus proche)
+7. Build Commande : `npm install`
+8. Start Command : `npm start`
+
+Ajouter  `"start": "node app.js"` dans le package.json dans `scripts` et vérifier avec npm start dans le terminal puis faire un commit
 
 
-- Repo Front-end https://github.com/k1383/Todo-List-Front
+- Repository GitHub du [Front-end](https://github.com/k1383/Todo-List-Front)
