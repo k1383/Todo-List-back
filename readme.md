@@ -6,7 +6,7 @@
 - [Objectif](#Objectif)
 - [Installation](#Installation)
 - [MongoDB](#MongoDB)
-- [Aperçu](#Aperçu)
+- [GitHub](#Github)
 - [Déploiement](#Déploiement)
 
 ### Description
@@ -44,13 +44,6 @@ L'application est disponible sur http://localhost:5173.
     MONGO_URI=
 ```
 
-
-5. Créer un fichier `.gignore` et ajouter ceci
-```bash
-    .env
-    node_modules
-```
-
 ### MongoDB
 
 - Accèder au site de [MongoDB](https://www.mongodb.com/)
@@ -72,6 +65,36 @@ L'application est disponible sur http://localhost:5173.
     - `MONGO_URI=lien`
     - :warning: attention a ne pas laisser d'espace
 
+### GitHub
+Sauvegarder sur GitHub
+1. Accéder au site [GitHub](https://github.com/)
+2. Inscrivez vous ou Connecter vous 
+3. Une fois sur la page d'accueil cliquer sur "New" dans le tableau de bord
+![alt text](image-8.png)
+4. Nommez votre projet (si vous faite un reposiroy GitHub seulement pour le back, n'oubliez pas de le préciser), exemple : Mon-Projet-Backend
+Vous avez le choix de mettre votre repository en Public ou Privé 
+5. Cliquez sur (Create repository)
+![alt text](image-9.png)
+6. Nous arrivons sur cet page 
+![alt text](image-10.png)
+7. Aller sur votre vs code et ouvrez un terminal (crtl ù) ou pn clique sur![alt text](image-11.png)
+Renseigner les commande suivante :
+```
+    - git init 
+    - git add * 
+    - git commit -m "first commit"
+    - git branch -M main
+    - git remote add main (votre lien donner par GitHub)
+    - git push -u origin main
+```
+Puis recharger la page sur GitHub (ctrl r) et votre projet sera sur GitHub.
+Pour les prochain commit vous pourriez taper
+``` 
+    - git add *
+    - git commit -m "votre message"
+    - git push 
+```
+
 ### Déploiement
 
 Déploiement du Back-end sur Render  
@@ -86,8 +109,6 @@ Déploiement du Back-end sur Render
 6. Region : Frankfurt (la plus proche)
 7. Build Commande : `npm install`
 
-8. Ajouter  `"start": "node app.js"` dans le package.json dans `scripts` et vérifier avec npm start dans le terminal puis faite un commit
-
-9. Start Command : `npm start`
+8. Start Command : `npm start`
 
 - Repository GitHub du [Front-end](https://github.com/k1383/Todo-List-Front)
