@@ -13,10 +13,11 @@
 - **Todo List** est une application web permettant à un utilisateur de pouvoir créer une todo list 
 
 ### Objectif
-Créer une todo list
-Afficher toutes les todo list de l'utilisateur 
-Mettre à jour une todo list
-Supprimer une todo list
+Créer une tâche
+Afficher toutes les tâches de l'utilisateur 
+Supprimer une une tâche 
+Cocher une tâche 
+Décocher une tâche 
 
 ### Installation
 Node.js (version 22 ou supérieur)
@@ -37,7 +38,12 @@ cd Todo-List-back
 - Lancer le serveur `nodemon app.js`
 L'application est disponible sur http://localhost:5173.
 
-4. Créer un fichier `.env` et ajouter `MONGO_URI=`
+4. Créer un fichier `.env` et ajouter 
+```bash
+    PORT=3000
+    MONGO_URI=
+```
+
 
 5. Créer un fichier `.gignore` et ajouter ceci
 ```bash
@@ -59,11 +65,12 @@ L'application est disponible sur http://localhost:5173.
 - Choisissez un nom d'utilisateur et un mot de passe :warning: **Stocker ces informations dans un endroit sécuriser**
     - Cliquer sur "Create Data User" et ensuite cliquer sur "choose a connection method" 
 ![alt text](image-5.png)
-- Connect to your application → Drivers 
+-  Ici sur "Connect to your application" cliquer sur "Drivers" 
 ![alt text](image-6.png)
 - Vous arrivez sur "Connecting with MongoDB Driver"
     - Répcupérer le lien et faite un copier coller dans le fichier .env sur` MONGO_URI`
     - `MONGO_URI=lien`
+    - :warning: attention a ne pas laisser d'espace
 
 ### Déploiement
 
@@ -78,9 +85,9 @@ Déploiement du Back-end sur Render
 5. Branch : Main
 6. Region : Frankfurt (la plus proche)
 7. Build Commande : `npm install`
-8. Start Command : `npm start`
 
-Ajouter  `"start": "node app.js"` dans le package.json dans `scripts` et vérifier avec npm start dans le terminal puis faire un commit
+8. Ajouter  `"start": "node app.js"` dans le package.json dans `scripts` et vérifier avec npm start dans le terminal puis faite un commit
 
+9. Start Command : `npm start`
 
 - Repository GitHub du [Front-end](https://github.com/k1383/Todo-List-Front)
