@@ -27,7 +27,7 @@ npm
 
 1. Cloner le repository à partir de GitHub
 - Cliquer sur "Code" et copier le lien 
-- Sur votre bureau clic droit et ouvrir dans le Terminal, puis taper les commandes suivantes 
+- Sur votre bureau clic droit et "Ouvrir dans le Terminal", puis taper les commandes suivantes 
 ```bash
 git clone https://github.com/k1383/Todo-List-back.git
 cd Todo-List-back
