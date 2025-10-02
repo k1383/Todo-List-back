@@ -108,7 +108,8 @@ Déploiement du Back-end sur Render
 5. Branch : Main
 6. Region : Frankfurt (la plus proche)
 7. Build Commande : `npm install`
-
 8. Start Command : `npm start`
-
+9. Sur Render une fois le déploiement du back effectuer dans le tableau de bord cliquer sur "Project", cliquer ensuite sur votre déploiement back, toujours dans le tableau de bord cliquez sur "Environnement" et à présent créer une nouvelle variable d'environnement, dans la section "KEY" on renseigne "MONGO_URI" et dans la section "VALUE" on renseigne le même lien que dans le fichier .env récupèrer auparavant sur mongoDB
+![alt text](image-12.png)
+10. Cliquer sur "Project" dans le tableau de bord et cliquer sur votre déploiement front, vous avez un lien https://votre-projet-xxxxxx.com, cliquer dessus et vérifier que tous s'affiche correctement et tester si besoins 
 - Repository GitHub du [Front-end](https://github.com/k1383/Todo-List-Front)
