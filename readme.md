@@ -13,11 +13,11 @@
 - **Todo List** est une application web permettant à un utilisateur de pouvoir créer une todo list 
 
 ### Objectif
-Créer une tâche
-Afficher toutes les tâches de l'utilisateur 
-Supprimer une une tâche 
-Cocher une tâche 
-Décocher une tâche 
+- Créer une tâche
+- Afficher toutes les tâches de l'utilisateur 
+- Supprimer une une tâche 
+- Cocher une tâche 
+- Décocher une tâche 
 
 ### Installation
 Node.js (version 22 ou supérieur)
@@ -25,12 +25,15 @@ npm
 
 #### Prérequis
 
-1. Cloner le repo
+1. Cloner le repository à partir de GitHub
+- Cliquer sur "Code" et copier le lien 
+- Sur votre bureau clic droit et ouvrir dans le Terminal, puis taper les commandes suivantes 
 ```bash
 git clone https://github.com/k1383/Todo-List-back.git
 cd Todo-List-back
 ```
 2. Installer les dépendances
+- Ouvrer votre projet sur sur VS Code et ouvrez le terminal
 - Installation de mongoose `npm install mongoose`
 - Installation de dotenv `npm install dotenv`
 
@@ -38,7 +41,7 @@ cd Todo-List-back
 - Lancer le serveur `nodemon app.js`
 L'application est disponible sur http://localhost:5173.
 
-4. Créer un fichier `.env` et ajouter 
+4. Créer un fichier à la racine de votre projet `.env` et ajouter 
 ```bash
     PORT=3000
     MONGO_URI=
@@ -46,7 +49,7 @@ L'application est disponible sur http://localhost:5173.
 
 ### MongoDB
 
-- Accèder au site de [MongoDB](https://www.mongodb.com/)
+- Accèder au site de [MongoDB](https://www.mongodb.com/) pour créer une base de données 
 -  Inscrivez-vous 
 - Une fois sur la page d'accueil cliquez sur "New Project"
 - Nommez votre projet et fait ensuite cliquer sur "next".
@@ -112,4 +115,5 @@ Déploiement du Back-end sur Render
 9. Sur Render une fois le déploiement du back effectuer dans le tableau de bord cliquer sur "Project", cliquer ensuite sur votre déploiement back, toujours dans le tableau de bord cliquez sur "Environnement" et à présent créer une nouvelle variable d'environnement, dans la section "KEY" on renseigne "MONGO_URI" et dans la section "VALUE" on renseigne le même lien que dans le fichier .env récupèrer auparavant sur mongoDB
 ![alt text](image-12.png)
 10. Cliquer sur "Project" dans le tableau de bord et cliquer sur votre déploiement front, vous avez un lien https://votre-projet-xxxxxx.com, cliquer dessus et vérifier que tous s'affiche correctement et tester si besoins 
+
 - Repository GitHub du [Front-end](https://github.com/k1383/Todo-List-Front)
