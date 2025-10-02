@@ -10,7 +10,7 @@
 - [Déploiement](#Déploiement)
 
 ### Description
-- **Todo List** est une application web permettant à un utilisateur de pouvoir créer une todo list 
+- **Todo List** est une application web permettant à un utilisateur de pouvoir créer une todo list, cocher s'il le souhaite pour indiquer qu'une tâche est fini ou pas et possibilité de supprimer une tâche 
 
 ### Objectif
 - Créer une tâche
@@ -49,7 +49,7 @@ L'application est disponible sur http://localhost:5173.
 
 ### MongoDB
 
-- Accèder au site de [MongoDB](https://www.mongodb.com/) pour créer une base de données 
+- Accèder au site de [MongoDB](https://www.mongodb.com/) pour créer une base de données
 -  Inscrivez-vous 
 - Une fois sur la page d'accueil cliquez sur "New Project"
 - Nommez votre projet et fait ensuite cliquer sur "next".
